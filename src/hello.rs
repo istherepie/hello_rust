@@ -1,9 +1,8 @@
-static HELLO: &str = "Hello World";
-
-pub fn greeting<'a>() -> &'a str {
-    return HELLO
+// Simply return a string
+pub fn greeting() -> String {
+    let message = String::from("Hello World");
+    return message;
 }
-
 
 #[cfg(test)]
 mod tests {
